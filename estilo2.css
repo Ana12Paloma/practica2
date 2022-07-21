@@ -1,0 +1,87 @@
+/*Aplica para Habitat y Diet*/
+header{
+	background-color: thistle;
+}
+body{
+	background-color: lavender; /*COLOR DE FONDO*/
+	color: #483D8B; /*COLOR DE TEXTO*/
+}
+
+#barra a{  /*ESTILO A LAS ETIQUETAS A*/
+	text-decoration: none;
+	color: steelblue;
+}
+#barra a:hover{  /*CUANDO EL APUNTADOR ESTE SOBRE REALIZARA: */
+	text-decoration: underline;
+	color: black;
+}
+
+#barra{   /*formato a tod el id : barra*/
+	background: lightsteelblue;  /*color de fondo*/
+	position: absolute;  /*tomara todo el espacio*/
+	left: 0; /*para que suba el margen superior izquierdo*/
+	top: 0; /*para que suba el margen superior*/
+	display: block;
+	width: 100%; 
+}
+#barra ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#barra li{
+	float: left;
+}
+#barra li a{
+	padding: 30px; /*espacio entre los elementos*/
+	display: inline-block; 
+	text-decoration: none;
+}
+#barra li a:hover{  /*CUANDO EL APUNTADOR ESTE SOBRE REALIZARA: */
+	background-color: ghostwhite;
+	color: black;
+}
+
+/*identificador de contenido*/
+
+#contenido{
+	max-width: 100%;
+	position: relative;
+	top: 80px;
+	margin: 0 auto;
+	background-color: lightsteelblue;
+	padding: 2%;
+	border-radius: 1em;
+}
+
+#contenido header{
+	clear: both;
+	height: 120px; /*alto*/
+	padding: 10px 20px;
+	background-color: ghostwhite;
+	border-radius: 1em;
+}
+
+#principal{
+	height: 400px;
+	width: 45%; /*ancho*/
+	float: left; /*ubicar a la izquierda*/
+	padding: 4px; /* espaciado*/
+}
+#secundario{
+	width: 45%;
+	float: left;
+	padding: 4px;
+}
+#contenido aside{
+	width: 20%;
+	float: left;
+	padding: 4px;
+}
+#contenido footer{
+	clear: both; /*ignora los elementos flotantes*/
+	width: 100%;
+	background-color: ghostwhite;
+	height: 50px;
+	border-radius: 1em;
+}
